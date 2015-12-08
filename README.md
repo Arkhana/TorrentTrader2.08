@@ -66,7 +66,9 @@ Any problems please visit www.torrenttrader.org
 # TorrentTrader2.08
 
 fix bug download.php
-ligne 73 & 83
-//header('Content-Disposition: attachment; filename="'.$name.'"');
-header('Content-Disposition: attachment; filename='.sqlesc($name).'');
 
+ligne 73 & 83
+
+//header('Content-Disposition: attachment; filename="'.$name.'"');
+
+header('Content-Disposition: attachment; filename='.sqlesc($name).'');
