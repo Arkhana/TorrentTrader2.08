@@ -8,8 +8,8 @@ READ FIRST:
 
 REQUIREMENTS:
 =============
-- PHP 4.3+
-- MYSQL 4+
+- PHP 5
+- MYSQL 5
 - We do not advise that register_globals is enabled
 - We do not advise installation in a windows enviroment, however it will work (you may need to adjust paths)
 
@@ -58,17 +58,9 @@ A warning will display on the site index until its removed
 
 Any problems please visit www.torrenttrader.org
 
-
-
-
-
-
 # TorrentTrader2.08
 
-fix bug download.php
-
-ligne 73 & 83
+fix bug both download.php ligne 73 & 83
 
 //header('Content-Disposition: attachment; filename="'.$name.'"');
-
 header('Content-Disposition: attachment; filename='.sqlesc($name).'');
